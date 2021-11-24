@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>mini project</title>
+ <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+<nav>
+<div class="link">
+<ul>
+ <li><a href="C:\mini project\unit1.pdf">unit 1</a></li>
+ <li><a href="C:\mini project\unit2.pdf">unit 2</a></li>
+ <li><a href="C:\mini project\Unit3.pdf">unit 3</a></li>
+ <li><a href="C:\mini project\Unit4.pdf">unit 4</a></li>
+ <li><a href="C:\mini project\Unit5.pdf">unit 5</a></li>
+</ul>
+</div>
+ <div class="toggle-btn">
+ <span></span>
+ <span></span>
+ <span></span>
+</div>
+</nav>
+<div class="main-body">
+<div class="header">
+ <video src="sm.mp4" muted loop autoplay type="mp4" alt=""></video>
+ <div class="content">
+ <h1 class="heading">r programming</h1>
+</div>
+</div>
+</div>
+<script>
+ const toggleBtn = document.querySelector('.toggle-btn');
+ const ul = document.querySelector('nav .link');
+ const header = document.querySelector('.header');
+
+ toggleBtn.addEventListener('click', () => {
+ toggleBtn.classList.toggle('active');
+ ul.classList.toggle('active');
+ header.classList.toggle('skew');
+})
+</script>
+</body>
+</html>
